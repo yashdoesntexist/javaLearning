@@ -16,7 +16,7 @@ public class array2d {
         testingArray[2][0] = 2;
         testingArray[2][2] = 2;
 
-        for(int i = 0; i<6; i++){
+        for(int i = 0; i<6; i++){ // O(n^2)-time complexity
             for(int j = 0; j<4; j++){
                 System.out.print(testingArray[i][j]);
             }
@@ -28,7 +28,7 @@ public class array2d {
 
         int[][] userArray = new int[rows][cols];
 
-        for(int i = 0; i< rows; i++){
+        for(int i = 0; i< rows; i++){ // O(n^2)-time complexity
             for(int j = 0; j< cols; j++){
                 userArray[i][j] = getInfo.nextInt();
             }
@@ -36,7 +36,7 @@ public class array2d {
 
         System.out.println(" Your 2D array is:");
 
-        for(int i = 0; i<rows; i++){
+        for(int i = 0; i<rows; i++){ // O(n^2)-time complexity
             for(int j = 0; j<cols; j++){
                 System.out.print(userArray[i][j] + "  ");
             }
@@ -47,7 +47,7 @@ public class array2d {
 
         int findNum = getInfo.nextInt();
 
-        for(int i = 0; i< rows; i++){
+        for(int i = 0; i< rows; i++){ // O(n^2)-time complexity
             for(int j= 0; j<cols ; j++){
                 if ((userArray[i][j] == findNum )) {
                     System.out.println("Your number is stored at: " + i + " , " +j);
@@ -55,7 +55,8 @@ public class array2d {
                 }
             }
         }
+        // total run time = O(rows * cols) or O(n^2) if rows = cols
 
-
+        getInfo.close();
     }
 }
