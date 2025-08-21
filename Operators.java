@@ -36,7 +36,7 @@ public class Operators {
         int notBitMask3 = ~(bitMask3);
 
 
-        int newNum2 = notBitMask3 & n;
+        int newNum2 = notBitMask3 & j;
         System.out.println(newNum2);
 
         Scanner getInfo = new Scanner(System.in);
@@ -53,7 +53,7 @@ public class Operators {
             System.out.println(newNum3);
         }else{
             int newBitMask = ~(bitMask4);
-            int newNum3 = newBitMask & n;
+            int newNum3 = newBitMask & i;
             System.out.println(newNum3);
         }
 
