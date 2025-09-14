@@ -1,25 +1,20 @@
 package javaLearning;
 
-import java.util.Objects;
+import java.util.HashMap;
+import java.util.Map;
 
 public class mapReduce {
-    public static void returnCount(String[] listProduct, int num, int k){
-        if(k == 0){
-            return;
+    public static Map<String, Integer> returnCount(String[] listProduct) {
+        Map<String, Integer> countMap = new HashMap<>();
+        for (String product : listProduct) {
+            countMap.put(product, countMap.getOrDefault(product, 0) + 1);
         }
-        for(int i = 1; i <= listProduct.length; i++){
-            if(Objects.equals(listProduct[i], listProduct[i + 1])){
-                num++;
-            }
-
-        }
-        returnCount(listProduct, num, k-1);
-
+        return countMap;
     }
-    public static void main(String[] args){
-        String[] listProduct = {"shoes", "laptop", "shoes", "phone", "laptop"};
-        int k = listProduct.length;
-        returnCount(listProduct, 0, k);
 
+    public static void main(String[] args) {
+        String[] listProduct = {"shoes", "laptop", "shoes", "phone", "laptop"};
+        Map<String, Integer> result = returnCount(listProduct);
+        System.out.println(result);
     }
 }
