@@ -5,7 +5,7 @@ class Pen{
     String type;
 
     public void write(){
-        System.out.println("Wrtite");
+        System.out.println("Write");
     }
 
     public void printColor(){
