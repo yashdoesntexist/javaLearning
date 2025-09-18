@@ -11,7 +11,8 @@ public class mapReduce {
                 "[Toronto] Customer asked about product laptop",
                 "[Calgary] Customer asked about product shoes",
                 "[Vancouver] Customer asked about product phone",
-                "[Toronto] Customer asked about product laptop"
+                "[Toronto] Customer asked about product laptop",
+                "[Toronto] Customer asked about product phone"
         );
 
         // MAP: emit (product, 1)
