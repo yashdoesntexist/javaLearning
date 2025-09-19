@@ -12,6 +12,12 @@ public class mapReduce {
                 "[Calgary] Customer asked about product shoes",
                 "[Vancouver] Customer asked about product phone",
                 "[Toronto] Customer asked about product laptop",
+                "[Toronto] Customer asked about product phone",
+                "[Vancouver] Customer asked about product shoes",
+                "[Toronto] Customer asked about product laptop",
+                "[Calgary] Customer asked about product shoes",
+                "[Vancouver] Customer asked about product phone",
+                "[Toronto] Customer asked about product laptop",
                 "[Toronto] Customer asked about product phone"
         );
 
