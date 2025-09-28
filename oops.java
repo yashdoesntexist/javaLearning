@@ -23,9 +23,9 @@ class Student{
 //    Student(){
 //        System.out.println("COnstructor called");
 //    }
-    Student(String name, int age){
-        this.name = name;
-        this.age = age;
+    Student(Student s2){
+        this.name = s2.name;
+        this.age = s2.age;
     }
 }
 
@@ -41,7 +41,9 @@ public class oops {
 //        s1.name = "bruce";
 //        s1.age = 21;
 //        s1.printName();
-        Student s2 = new Student("batman" ,  25);
+        Student s2 = new Student();
+        s2.name = "batman";
+        s2.age = 19;
         s2.printName();
     }
 }
