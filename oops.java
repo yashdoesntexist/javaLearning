@@ -41,9 +41,5 @@ public class oops {
 //        s1.name = "bruce";
 //        s1.age = 21;
 //        s1.printName();
-        Student s2 = new Student();
-        s2.name = "batman";
-        s2.age = 19;
-        s2.printName();
     }
 }
